@@ -1,0 +1,39 @@
+npx playwright test  ==> Run all the tests
+
+npx playwright test tests/todo-page.spec.ts ==> Run a single test file
+
+npx playwright test tests/todo-page/ tests/landing-page/ ==>  Run a set of test files
+
+npx playwright test my-spec my-spec-2 ==>  Run files that have my-spec or my-spec-2 in the file name
+
+npx playwright test my-spec.ts:42  ==>  Run files that are in line 42 in my-spec.ts
+
+npx playwright test -g "add a todo item" ==> Run the test with the title
+
+npx playwright test --headed ==>  Run tests in headed browsers
+
+npx playwright test --project=chromium ==> Run all the tests against a specific project
+
+npx playwright test --workers=1 ==> Disable parallelization
+
+npx playwright test --reporter=dot ==>  Choose a reporter
+
+npx playwright test --debug ==>  Run in debug mode with Playwright Inspector
+
+npx playwright test --help ==>  Ask for help
+
+*******************
+npx playwright codegen --viewport-size=800,600 == browser i bu boyutlarda acar
+
+npx playwright codegen --device='iPhone13'
+
+npx paywright codegen --color-scheme=dark playwright.dev
+
+****************************
+
+npx playwright test --workers 4 ==> You can control the maximum number of parallel worker processes via command line or in the configuration file.
+
+npx playwright test --workers=1 ==> You can disable any parallelism by allowing just a single worker at any time
+
+npx playwright test --max-failures=10 ==> You can limit the number of failed tests in the whole test suite by setting maxFailures config option or 
+							passing --max-failures command line flag.

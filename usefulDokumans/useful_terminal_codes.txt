@@ -1,0 +1,8 @@
+to run test under tests
+   npx playwright test --headed
+
+to run test jest
+    npm test
+
+install jest 
+    npm install -D jest
