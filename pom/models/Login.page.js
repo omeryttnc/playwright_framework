@@ -1,7 +1,7 @@
 const BasePage = require('./Base.page');
 class LoginPage extends BasePage {
     constructor(page){
-        super(page);
+        super(page);   //Parent class(Base.page)'a ulasmak icin super kullaniyoruz
 
         // selectors
         this.userNameTxt =  '#username';
@@ -12,7 +12,7 @@ class LoginPage extends BasePage {
      * Method to navigate to Login page using parent's method
      */
     async navigate(){
-       await super.navigate('index.html'); 
+       await super.navigate('index.html'); //super diyerek Base classindaki methoda ulasmis oluyoruz
     }
     /**
      * Method to login using username and password

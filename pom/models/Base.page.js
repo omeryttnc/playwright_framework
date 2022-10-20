@@ -11,4 +11,5 @@ class BasePage{
         await this.page.goto(`https://demo.applitools.com/${path}`)
     }
 }
-module.exports = BasePage;
+module.exports = BasePage; //Farkli package'lerden bu class'a ulasilabilmesi icin
+//Dikkat:module class'in disina yazilmali
