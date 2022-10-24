@@ -6,3 +6,7 @@ to run test jest
 
 install jest 
     npm install -D jest
+
+install allure-commandline
+     npm i -D allure-commandline    
+
